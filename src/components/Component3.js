@@ -1,3 +1,6 @@
+import "../styles/component3.css"
+
+
 const Component3 = () => {
   return (
     <div className="component-3">

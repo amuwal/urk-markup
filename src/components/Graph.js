@@ -53,7 +53,7 @@ const employerContribution = [
 const employeeContribution = [
   20, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85,
 ];
-const totalInterest = [30, 40, 45, 50, 60, 70, 85, 95, 105, 110, 125, 145, 160];
+const totalInterest = [30, 40, 45, 50, 60, 70, 85, 95, 105, 110, 125, 130, 160];
 
 export const data = {
   labels,

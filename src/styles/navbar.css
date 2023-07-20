@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+}
+
+.navbar-section {
+    display: flex;
+    flex-direction: column;
+    grid-area: 12px;
+}
+
+.navbar-section-1 {
+    margin-bottom: 40px;
+}
+
+.navbar-section-2 {
+    margin-bottom: auto;
+}
+
+.icon {
+    color: var(--secondary);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.icon-active {
+    background-color: var(--btn-blue);
+    color: white;
+    box-shadow: -5px 5px 20px 4px #3d2edf3c;
+}

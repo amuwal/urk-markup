@@ -1,0 +1,53 @@
+.component-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 250px;
+    background-color: var(--backgroud-color);
+    padding-left: 50px;
+}
+
+.component-1 > .user-info {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.component-1 > .user-info > .user-image > img {
+    object-fit: cover;
+    border-radius: 50px;
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.component-1 > .greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.component-1 > .account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.component-1 > .recent-transactions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.component-1 > .recent-transactions > .transaction {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid #adadad87;
+}
+
+.transaction > p {
+    font-size: 0.8em;
+}

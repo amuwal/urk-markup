@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Component1 from "./components/Component1";
 import Component2 from "./components/Component2";
 import Component3 from "./components/Component3";
-import "./style.css"
+import "./styles/app.css"
 
 function App() {
   return (

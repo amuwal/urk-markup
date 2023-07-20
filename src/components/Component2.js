@@ -1,5 +1,6 @@
 import Graph from "./Graph"
 import Donut from "./Donut"
+import "../styles/component2.css"
 
 const Component2 = () => {
     return (

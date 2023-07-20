@@ -1,3 +1,5 @@
+import "../styles/component1.css"
+
 const Component1 = () => {
   return  (
     <div className="component-1">
