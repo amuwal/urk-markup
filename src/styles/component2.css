@@ -4,7 +4,6 @@
     width: 600px;
     margin-left: 50px;
     margin-top: 20px;
-    gap: 20px;
 }
 
 .component-2 > .goal {
@@ -16,6 +15,12 @@
 .component-2 > .goal > .goal-headings {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.goal-headings > strong {
+    font-size: 0.8rem;
+    font-weight: 1000;
 }
 
 .component-2 > .goal > .goal-stats {
@@ -24,16 +29,28 @@
 }
 
 .goal-stats > .goal-stat {
+    display: flex;
+    flex-direction: column;
     width: calc(100%/3);
-    gap: 10px;
+    gap: 8px;
     padding: 10px 0;
     border-bottom: 1px solid var(--blue);
+}
+
+.goal-stat > :first-child {
+    font-weight: 900;
 }
 
 .component-2 > .graph-component {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 35px;
+}
+
+.component-2 > .graph-component > strong {
+    font-size: 0.9em;
+    font-weight: bolder;
 }
 
 .component-2 > .graph-component > .graph {
@@ -43,6 +60,13 @@
 .component-2 > .peers-comparison {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
+}
+
+.peers-comparison > strong {
+    font-size: 0.9em;
+    font-weight: bolder;
+    margin-bottom: 3px;
 }
 
 .peers-comparison > .peers-comparison-stats {
@@ -62,7 +86,20 @@
     display: flex;
     padding: 10px 0;
     gap: 5px;
+    align-items: baseline;
     border-bottom: 1px solid #adadad87;
+}
+
+.comparison-setting > label {
+    font-size: 0.7em;
+    font-weight: 900;
+}
+
+.comparison-setting > select {
+    font-size: 0.7em;
+    font-weight: 500;
+    border: unset;
+    background-color: unset;
 }
 
 .comparison-setting:last-child {
@@ -71,6 +108,7 @@
 
 .peers-comparison-stats > .comparison-donuts {
     display: flex;
+    width: 350px;
     justify-content: space-between;
 }
 
@@ -78,7 +116,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
+
+.comparison-donut > p {
+    font-size: 0.7rem;
+}
+
 
 .donut-parent {
     height: 100px;

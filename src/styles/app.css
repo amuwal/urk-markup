@@ -5,7 +5,7 @@ body {
 .App {
     display: flex;
     height: 96vh;
-    margin: 1vh 5px 5px 3vh;
+    margin: 1vh 5px 3vh 5px;
     border-radius: 20px;
     background-color: white;
 }

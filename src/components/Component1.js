@@ -21,8 +21,8 @@ const UserInfo = () => {
         />
       </div>
       <div className="greeting">
-        <h3>Hi Mike,</h3>
-        <p>welcome back</p>
+        <p id="hi-user">Hi Mike,</p>
+        <p className="text-secondary">welcome back.</p>
       </div>
     </div>
   );

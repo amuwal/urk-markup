@@ -30,7 +30,7 @@ const GoalComponent = () => {
                   <p className="text-secondary">Goal Achieved</p>
                 </div>
                 <div className="goal-stat">
-                  <h3>#300</h3>
+                  <h3>$300</h3>
                   <p className="text-secondary">Est. Monthly Income</p>
                 </div>
             </div>

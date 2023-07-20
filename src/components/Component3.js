@@ -13,19 +13,19 @@ const Component3 = () => {
 const RetirementStrategy = () => {
   return (
     <div className="retirement-strategy">
-      <h3>
-        <b>Retirement Strategy</b>
-      </h3>
+      <p>
+        Retirement Strategy
+      </p>
       <div className="retirement-settings">
         <div className="retirement-setting">
-          <strong>Employee Contribution</strong>
+          <p>Employee Contribution</p>
           <div className="range-div">
             <input type="range" />
             <label htmlFor="">12%</label>
           </div>
         </div>
         <div className="retirement-setting">
-          <strong>Retirement Age</strong>
+          <p>Retirement Age</p>
           <div className="range-div">
             <input type="range" />
             <label htmlFor="">65</label>

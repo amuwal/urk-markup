@@ -4,13 +4,12 @@
     align-items: flex-start;
     width: 250px;
     background-color: var(--backgroud-color);
-    padding-left: 50px;
+    padding-left: 36px;
 }
 
 .component-1 > .user-info {
     display: flex;
     margin-top: 20px;
-    width: 100%;
     align-items: center;
     gap: 15px;
 }
@@ -20,6 +19,8 @@
     border-radius: 50px;
     width: 50px;
     aspect-ratio: 1/1;
+    box-shadow: -5px 5px 15px 2px rgba(0, 0, 0, 0.138);
+
 }
 
 .component-1 > .greeting {
@@ -27,11 +28,42 @@
     flex-direction: column;
 }
 
+.greeting > #hi-user {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.greeting > .text-secondary {
+    color: rgba(0, 0, 0, 0.783);
+    font-size: 0.8em;
+}
+
 .component-1 > .account-info {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.account-info > :nth-child(1) {
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
+/* money balace for each */
+.account-info :nth-child(1) {
+    font-weight: bolder;
+}
+
+.account-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.account-info > button {
+    font-size: 0.9rem;
+    width: 120px;
 }
 
 .component-1 > .recent-transactions {
@@ -41,13 +73,21 @@
     gap: 15px;
 }
 
+.recent-transactions > strong {
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+
 .component-1 > .recent-transactions > .transaction {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #adadad87;
 }
 
-.transaction > p {
-    font-size: 0.8em;
+.transaction > :last-child {
+    font-size: 0.6em;
+    font-weight: bolder;
+    letter-spacing: unset;
 }

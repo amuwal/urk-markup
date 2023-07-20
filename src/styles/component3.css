@@ -10,6 +10,11 @@
     width: 250px;
 }
 
+.retirement-strategy > p {
+    font-weight: 900;
+    font-size: 0.9em;
+}
+
 .component-3 > .retirement-strategy > .retirement-settings {
     display: flex;
     flex-direction: column;
@@ -23,12 +28,23 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 10px;
+}
+
+.retirement-setting > p {
+    font-weight: 900;
+    font-size: 0.8em;
 }
 
 .retirement-setting > .range-div {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.range-div > label {
+    font-weight: 900;
+    font-size: 0.8em;
 }
 
 .component-3 > .retirement-strategy > .retirement-stats {
@@ -42,7 +58,20 @@
     justify-content: space-between;
 }
 
+.retirement-stat > p {
+    font-weight: 900;
+    font-size: 0.8em;
+}
+
+.retirement-strategy > button {
+    padding: 10px;
+}
+
 .retirement-strategy a {
+    text-decoration: unset;
+    font-weight: bolder;
+    color: var(--blue);
+    font-size: 0.8em;
     align-self: center;
 }
 
@@ -53,4 +82,19 @@
     border-left: 1px solid var(--blue);
     padding: 10px 20px;
     flex-direction: column;
+}
+
+.houseing-advance-ad-heading > p {
+    font-size: .9em;
+}
+
+.houseing-advance-ad-heading > :last-child {
+    font-size: 0.9em;
+}
+
+.houseing-advance-ad > a {
+    text-decoration: unset;
+    font-weight: bolder;
+    color: var(--blue);
+    font-size: 0.8em;
 }
