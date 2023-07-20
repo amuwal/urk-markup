@@ -1,3 +1,5 @@
+import Graph from "./Graph"
+import Donut from "./Donut"
 
 const Component2 = () => {
     return (
@@ -37,13 +39,62 @@ const GoalComponent = () => {
 
 const GraphComponent = () => {
     return (
-        <h1>ToDo (graph component)</h1>
+        <div className="graph-component">
+            <strong>
+                Contributions Overtime
+            </strong>
+            <Graph />
+        </div>
     )
 }
 
 const PeersComparison = () => {
     return (
-        <h1>ToDo (peers comparison)</h1>
+        <div className="peers-comparison">
+            <strong>How do I compare to my peers?</strong>
+            <p className="text-secondary">These numbers represetn current goal achievement</p>
+            <div className="peers-comparison-stats">
+                <div className="comparison-settings">
+                    <div className="comparison-setting">
+                        <label htmlFor="age-input">Age:</label>
+                        <select name="age-input" id="age-input">
+                            <option selected value="Under 30">Under 30</option>
+                            <option value="Under 40">Under 40</option>
+                        </select>
+                    </div>
+                    <div className="comparison-setting">
+                        <label htmlFor="salary-input">Salary:</label>
+                        <select name="salary-input" id="salary-input">
+                            <option selected value="K 20 -  K 30">K 20 -  K 30</option>
+                            <option value="K 30 - K 40">K 30 - K 40</option>
+                        </select>
+                    </div>
+                    <div className="comparison-setting">
+                        <label htmlFor="gender-input">Age:</label>
+                        <select name="gender-input" id="gender-input">
+                            <option selected value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div className="comparison-donuts">
+                    <div className="comparison-donut">
+                        <Donut />
+                        <p>Average</p>
+                    </div>
+                    <div className="comparison-donut">
+                        <Donut />
+                        <p>Top</p>
+                    </div>
+                    <div className="comparison-donut">
+                        <Donut />
+                        <p>Me</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 export default Component2;
