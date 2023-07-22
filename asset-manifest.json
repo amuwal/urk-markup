@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/urk-markup/static/css/main.fba76e8a.css",
+    "main.js": "/urk-markup/static/js/main.1f876f69.js",
+    "index.html": "/urk-markup/index.html",
+    "main.fba76e8a.css.map": "/urk-markup/static/css/main.fba76e8a.css.map",
+    "main.1f876f69.js.map": "/urk-markup/static/js/main.1f876f69.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fba76e8a.css",
+    "static/js/main.1f876f69.js"
+  ]
+}
