@@ -16,22 +16,22 @@ const GoalComponent = () => {
     return (
         <div className="goal">
             <div className="goal-headings">
-                <strong className="text-primary">Retirement Income</strong>
-                <h3>Starting Year 2056</h3>
+                <p className="text-primary heading-small">Retirement Income</p>
+                <p className="heading-large">Starting Year 2056</p>
             </div>
 
             <div className="goal-stats">
                 <div className="goal-stat">
                   <h3>$300,000</h3>
-                  <p className="text-secondary">My Goal</p>
+                  <p className="text-secondary text-small">My Goal</p>
                 </div>
                 <div className="goal-stat">
                   <h3>59 %</h3>
-                  <p className="text-secondary">Goal Achieved</p>
+                  <p className="text-secondary text-small">Goal Achieved</p>
                 </div>
                 <div className="goal-stat">
                   <h3>$300</h3>
-                  <p className="text-secondary">Est. Monthly Income</p>
+                  <p className="text-secondary text-small">Est. Monthly Income</p>
                 </div>
             </div>
         </div>
@@ -41,9 +41,9 @@ const GoalComponent = () => {
 const GraphComponent = () => {
     return (
         <div className="graph-component">
-            <strong>
+            <p className="heading-medium">
                 Contributions Overtime
-            </strong>
+            </p>
             <Graph />
         </div>
     )
@@ -52,27 +52,27 @@ const GraphComponent = () => {
 const PeersComparison = () => {
     return (
         <div className="peers-comparison">
-            <strong>How do I compare to my peers?</strong>
-            <p className="text-secondary">These numbers represetn current goal achievement</p>
+            <p className="heading-medium">How do I compare to my peers?</p>
+            <p className="text-secondary text-small">These numbers represetn current goal achievement</p>
             <div className="peers-comparison-stats">
                 <div className="comparison-settings">
                     <div className="comparison-setting">
-                        <label htmlFor="age-input">Age:</label>
-                        <select name="age-input" id="age-input">
+                        <label className="text-medium bolder" htmlFor="age-input">Age:</label>
+                        <select className="text-medium" name="age-input" id="age-input">
                             <option selected value="Under 30">Under 30</option>
                             <option value="Under 40">Under 40</option>
                         </select>
                     </div>
                     <div className="comparison-setting">
-                        <label htmlFor="salary-input">Salary:</label>
-                        <select name="salary-input" id="salary-input">
+                        <label className="text-medium bolder" htmlFor="salary-input">Salary:</label>
+                        <select className="text-medium" name="salary-input" id="salary-input">
                             <option selected value="K 20 -  K 30">K 20 -  K 30</option>
                             <option value="K 30 - K 40">K 30 - K 40</option>
                         </select>
                     </div>
                     <div className="comparison-setting">
-                        <label htmlFor="gender-input">Age:</label>
-                        <select name="gender-input" id="gender-input">
+                        <label className="text-medium bolder" htmlFor="gender-input">Gender:</label>
+                        <select className="text-medium" name="gender-input" id="gender-input">
                             <option selected value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="Other">Other</option>
@@ -83,15 +83,15 @@ const PeersComparison = () => {
                 <div className="comparison-donuts">
                     <div className="comparison-donut">
                         <Donut />
-                        <p>Average</p>
+                        <p className="text-medium">Average</p>
                     </div>
                     <div className="comparison-donut">
                         <Donut />
-                        <p>Top</p>
+                        <p className="text-medium">Top</p>
                     </div>
                     <div className="comparison-donut">
                         <Donut />
-                        <p>Me</p>
+                        <p className="text-medium">Me</p>
                     </div>
                 </div>
             </div>

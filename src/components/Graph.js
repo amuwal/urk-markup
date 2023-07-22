@@ -47,34 +47,46 @@ export const options = {
 };
 
 const labels = [20, "", 25, "", 30, "", 35, "", 40, "", 60, "", 65];
+const labelsMobile =[20, 25, 30, 35, 40, 60, 65]
 const employerContribution = [
   20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80,
 ];
+const employerContributionMobile = [
+    20, 30, 40, 50, 60, 70, 80
+]
 const employeeContribution = [
   20, 25, 30, 35, 45, 50, 55, 60, 65, 70, 75, 80, 85,
 ];
-const totalInterest = [30, 40, 45, 50, 60, 70, 85, 95, 105, 110, 125, 130, 160];
+const employeeContributionMobile = [
+    20, 30, 45, 55, 65, 75, 85
+]
+const totalInterest = [20, 30, 35, 40, 45, 50, 60, 80, 90, 105, 110, 120, 160];
+const totalInterestMobile = [
+    20, 35, 45, 60, 90, 110, 160
+]
+
+const w = window.innerWidth;;
 
 export const data = {
-  labels,
+  labels: w > 800 ? labels : labelsMobile,
   datasets: [
     {
       label: "Employer",
-      data: employerContribution,
+      data: w > 800 ? employerContribution : employerContributionMobile,
       backgroundColor: "#0800a3",
-      barThickness: 15,
+      barThickness: 13,
     },
     {
       label: "Employee",
-      data: employeeContribution,
+      data: w > 800 ? employeeContribution : employeeContributionMobile,
       backgroundColor: "#4935ff",
-      barThickness: 15,
+      barThickness: 13,
     },
     {
       label: "Total Interest",
-      data: totalInterest,
+      data: w >  800 ? totalInterest : totalInterestMobile,
       backgroundColor: "#85afff",
-      barThickness: 15,
+      barThickness: 13,
     },
   ],
 };

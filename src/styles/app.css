@@ -4,8 +4,16 @@ body {
 
 .App {
     display: flex;
-    height: 96vh;
-    margin: 1vh 5px 3vh 5px;
+    height: 98vh;
+    margin: 0.5vh 5px 1.5vh 5px;
     border-radius: 20px;
     background-color: white;
+}
+
+@media (max-width: 800px) {
+    .App {
+        flex-direction: column;
+        height: unset;
+        width: calc(100vw - 10px)
+    }
 }

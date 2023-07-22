@@ -1,5 +1,5 @@
 .component-3 {
-    margin-left: 50px;
+    margin-left: 85px;
     margin-top: 20px;
 }
 
@@ -7,12 +7,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 250px;
-}
+    width: 230px;
+    height: 400px;
+    padding: 15px;
+    background-color: var(--background-color);
+    justify-content: space-around;
+    border-radius: 10px;
 
-.retirement-strategy > p {
-    font-weight: 900;
-    font-size: 0.9em;
 }
 
 .component-3 > .retirement-strategy > .retirement-settings {
@@ -21,7 +22,7 @@
     border-bottom: 1px solid #adadad87;
     gap: 15px;
     width: 100%;
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
 .retirement-settings > .retirement-setting {
@@ -31,21 +32,12 @@
     gap: 10px;
 }
 
-.retirement-setting > p {
-    font-weight: 900;
-    font-size: 0.8em;
-}
-
 .retirement-setting > .range-div {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.range-div > label {
-    font-weight: 900;
-    font-size: 0.8em;
-}
 
 .component-3 > .retirement-strategy > .retirement-stats {
     display: flex;
@@ -56,11 +48,7 @@
 .retirement-stats > .retirement-stat {
     display: flex;
     justify-content: space-between;
-}
-
-.retirement-stat > p {
-    font-weight: 900;
-    font-size: 0.8em;
+    align-items: baseline;
 }
 
 .retirement-strategy > button {
@@ -71,7 +59,7 @@
     text-decoration: unset;
     font-weight: bolder;
     color: var(--blue);
-    font-size: 0.8em;
+    margin-bottom: 10px;
     align-self: center;
 }
 
@@ -84,17 +72,81 @@
     flex-direction: column;
 }
 
-.houseing-advance-ad-heading > p {
-    font-size: .9em;
-}
-
-.houseing-advance-ad-heading > :last-child {
-    font-size: 0.9em;
+.retirement-strategy > button {
+    font-weight: unset;
 }
 
 .houseing-advance-ad > a {
     text-decoration: unset;
     font-weight: bolder;
     color: var(--blue);
-    font-size: 0.8em;
+}
+
+@media (max-width: 1250px) {
+    .component-3 {
+        margin-left: 50px;
+    }
+    .component-3 > .retirement-strategy {
+        gap: 15px;
+        width: 220px;
+        height: 350px;
+        padding: 15px;
+    }
+    .component-3 > .houseing-advance-ad {
+        margin-top: 30px;
+        gap: 10px;
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .component-3 {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .component-3 > .retirement-strategy {
+        gap: 10px;
+        width: 220px;
+        height: 300px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .component-3 {
+        margin: unset;
+        width: 90%;
+        align-self: center;
+    }
+    .component-3 > .retirement-strategy {
+        width: 100%;
+        height: unset;
+        padding: 20px;
+        background-color: var(--background-color);
+        margin-bottom: 13vh;
+    }
+
+    .retirement-strategy > .heading-medium {
+        padding-bottom: 20px;
+    }
+
+    .component-3 .text-medium {
+        font-size: .9em;
+        font-weight: bold;
+    }
+
+    .retirement-settings > .retirement-setting {
+        gap: 20px;
+    }
+
+    .component-3  > .retirement-strategy > .retirement-stats {
+        padding-top: 15px;
+        gap: 20px;
+    }
+
+    .component-3 > .retirement-strategy > button {
+        margin-top: 10px;
+        padding: 15px;
+    }
+
 }

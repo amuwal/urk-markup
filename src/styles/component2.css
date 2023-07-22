@@ -1,8 +1,8 @@
 .component-2 {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    margin-left: 50px;
+    width: 485px;
+    margin-left: 85px;
     margin-top: 20px;
 }
 
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    height: 22%;
 }
 
 .component-2 > .goal > .goal-headings {
@@ -18,10 +19,6 @@
     gap: 5px;
 }
 
-.goal-headings > strong {
-    font-size: 0.8rem;
-    font-weight: 1000;
-}
 
 .component-2 > .goal > .goal-stats {
     display: flex;
@@ -37,42 +34,35 @@
     border-bottom: 1px solid var(--blue);
 }
 
-.goal-stat > :first-child {
-    font-weight: 900;
-}
-
 .component-2 > .graph-component {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 35px;
+    height: 40%;
 }
 
-.component-2 > .graph-component > strong {
-    font-size: 0.9em;
-    font-weight: bolder;
-}
 
 .component-2 > .graph-component > .graph {
-    height: 200px;
+    height: 85%;
 }
 
 .component-2 > .peers-comparison {
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
-.peers-comparison > strong {
-    font-size: 0.9em;
-    font-weight: bolder;
-    margin-bottom: 3px;
+.peers-comparison > p {
+    margin-bottom: 5px;
 }
 
 .peers-comparison > .peers-comparison-stats {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 60px;
+    margin-top: 20px;
 }
 
 
@@ -90,13 +80,7 @@
     border-bottom: 1px solid #adadad87;
 }
 
-.comparison-setting > label {
-    font-size: 0.7em;
-    font-weight: 900;
-}
-
 .comparison-setting > select {
-    font-size: 0.7em;
     font-weight: 500;
     border: unset;
     background-color: unset;
@@ -120,11 +104,134 @@
 }
 
 .comparison-donut > p {
-    font-size: 0.7rem;
+    font-weight: unset;
 }
 
 
 .donut-parent {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 1250px) {
+    .component-2 {
+        width: 450px;
+        margin-left: 65px;
+    }
+    .component-2 > .goal {
+        gap: 15px;
+        height: 20%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .component-2 {
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    .component-2 > .goal {
+        gap: 5px;
+    }
+
+    .component-2 > .graph-component {
+        gap: 5px;
+    }
+
+    .goal-stat > :first-child {
+        font-size: .95rem;
+    }
+
+    .peers-comparison > .peers-comparison-stats {
+        margin-top: 6px;
+        gap: 40px;
+    }
+
+    .donut-parent {
+        height: 60px;
+        aspect-ratio: 1/1;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .component-2 {
+        width: 86%;
+    }
+    .goal {
+        height: unset;
+    }
+    .goal-headings > .heading-small {
+        font-size: 1.2em;
+    }
+
+    .goal-headings > .heading-large {
+        font-size: 1.6em;
+    }
+    .goal > .goal-stats  {
+        flex-flow: row wrap;
+        gap: 10%;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .goal-stats > .goal-stat {
+        width: 45%;
+    }
+    
+    .goal-stats > :first-child {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    /* digits */
+    .goal-stats > .goal-stat > h3 {
+        font-size: 1.5em;
+    }
+
+    .goal-stats > :first-child > h3 {
+        font-size: 2em;
+    }
+
+    .goal-stat > p {
+        font-size: 0.8em;
+    }
+    .component-2 > .graph-component {
+        height: unset;
+        margin-top: 50px;
+    }
+
+    .peers-comparison > .text-small {
+        font-size: 0.75em;
+    }
+
+    .component-2 > .graph-component > .graph {
+        height: 300px;
+    }
+
+    .component-2 > .peers-comparison {
+        margin-top: 40px;
+    }
+
+    .peers-comparison > .peers-comparison-stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+
+    .peers-comparison-stats >.comparison-settings {
+        width: 90%;
+    }
+
+    .comparison-settings > .comparison-setting > label {
+        width: 25%;
+    }
+    .peers-comparison-stats > .comparison-donuts {
+        width: unset;
+    }
+
+    .donut-parent {
+        height: 100px;
+    }
+
 }

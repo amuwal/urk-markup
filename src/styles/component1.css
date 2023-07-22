@@ -1,10 +1,14 @@
 .component-1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 250px;
-    background-color: var(--backgroud-color);
-    padding-left: 36px;
+    width: 330px;
+    background-color: var(--background-color);
+    align-items: center;
+
+}
+
+.component-1 > div {
+    width: 65%;
 }
 
 .component-1 > .user-info {
@@ -28,16 +32,6 @@
     flex-direction: column;
 }
 
-.greeting > #hi-user {
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-.greeting > .text-secondary {
-    color: rgba(0, 0, 0, 0.783);
-    font-size: 0.8em;
-}
-
 .component-1 > .account-info {
     display: flex;
     flex-direction: column;
@@ -45,10 +39,6 @@
     margin-top: 30px;
 }
 
-.account-info > :nth-child(1) {
-    font-size: 0.8em;
-    font-weight: bolder;
-}
 
 /* money balace for each */
 .account-info :nth-child(1) {
@@ -62,8 +52,14 @@
 }
 
 .account-info > button {
-    font-size: 0.9rem;
+    display: flex;
     width: 120px;
+    align-items: center;
+}
+
+.account-info > button > span {
+    padding-top: 3px;
+    font-weight: unset;
 }
 
 .component-1 > .recent-transactions {
@@ -73,10 +69,6 @@
     gap: 15px;
 }
 
-.recent-transactions > strong {
-    font-size: 0.8em;
-    font-weight: bolder;
-}
 
 .component-1 > .recent-transactions > .transaction {
     display: flex;
@@ -86,8 +78,120 @@
     border-bottom: 1px solid #adadad87;
 }
 
-.transaction > :last-child {
-    font-size: 0.6em;
-    font-weight: bolder;
-    letter-spacing: unset;
+
+/* Media queries */
+@media (max-width: 1250px) {
+    .component-1 {
+        width: 290px;
+    }
+    .component-1 > div {
+        width: 70%;
+    }
+    .component-1 > .account-info {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
 }
+@media (max-width: 1200px) {
+    .component-1 {
+        width: 330px;
+    }
+
+    .component-1 > .user-info {
+        gap: 12px;
+    }
+
+    .component-1 > .user-info > .user-image > img {
+        width: 45px;
+        aspect-ratio: 1/1;
+    }
+
+    .component-1 > .account-info {
+        gap: 13px;
+        margin-top: 27px;
+    }
+    
+    .component-1 > .recent-transactions {
+        margin-top: 20px;
+        gap: 13px;
+    }
+    
+    .component-1 > .recent-transactions > .transaction {
+        gap: 5px;
+        padding-bottom: 8px;
+    }
+
+    /* money balace for each */
+    .account-info :nth-child(1) {
+        font-weight: bolder;
+        font-size: 0.9em;
+    }
+
+    .account-info > .heading-small {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 800px) {
+    .component-1 {
+        min-height: 85vh;
+        padding-top: 60px;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .component-1 > div {
+        width: 86%;
+    }
+    .component-1 > .user-info > .greeting :first-child {
+        font-size: 2em;
+    }
+    .component-1 > .user-info > .user-image > img {
+        width: 70px;
+    }
+    .component-1 > .account-info {
+        margin-top: 40px;
+        flex-direction: row;
+        flex-flow: row wrap;
+        background-color: var(--background-color);
+        padding: 40px 20px;
+        border-radius: 20px;
+    }
+    .account-info > :nth-child(1), .account-info > :nth-child(2) {
+        width: 100%;
+    }
+    .account-info > :first-child {
+        font-size: 1em;
+    }
+    .account-info > :nth-child(2) > :first-child {
+        font-size: 2.5em;
+    }
+    .account-info > .account-balance{
+        padding-bottom: 30px;
+    }
+    .account-info > div {
+        padding-bottom: 20px;
+    }
+    .account-info > .contribution > h4, .account-info > .total-interest > h4 {
+        font-size: 1.5em;
+    }
+    .account-info > button {
+        width: 100%;
+        justify-content: center;
+        padding: 20px;
+        font-weight: 600;
+    }
+    .component-1 > .recent-transactions {
+        margin-top: 30px;
+        background-color: var(--background-color);
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .recent-transactions > p {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+}
+
