@@ -23,8 +23,6 @@
 
 .text-secondary {
     color: var(--secondary);
-    /* font-size: 0.65rem;
-    font-weight: 900; */
 }
 
 .text-primary {
@@ -68,6 +66,19 @@
     font-weight: bolder;
 }
 
+
+@media (min-width: 1400px){
+    .text-small {
+        font-size: .65em;
+    }
+    .text-medium {
+        font-size: .7em;
+    }
+    .text-large {
+        font-size: 1.2em;
+    }
+}
+
 @media (max-width: 1250px) {
     .text-large {
         font-size: 0.8em;
@@ -107,6 +118,26 @@
     }
 }
 
+@media (max-width: 1000px){
+    .text-small {
+        font-size: 0.45em;
+    }
+    .text-large {
+        font-size: 0.64em;
+    }
+    .heading-medium {
+        font-size: 0.75em;
+    }
+    .heading-large {
+        font-size: 1em;
+    }
+    .heading-extra-large {
+        font-size: 1.05em;
+    }
+    .text-medium {
+        font-size: 0.48em;
+    }
+}
 /* for smaller devices */
 
 @media (max-width: 800px) {

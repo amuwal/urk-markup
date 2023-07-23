@@ -47,7 +47,7 @@ const AccountInfo = () => {
         <p className="text-secondary text-small">Total Interest</p>
       </div>
       <button className="btn-primary text-medium">
-        I want to <span class="material-symbols-outlined">chevron_right</span>
+        I want to <span className="material-symbols-outlined">chevron_right</span>
       </button>
     </div>
   );

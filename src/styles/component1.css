@@ -80,6 +80,88 @@
 
 
 /* Media queries */
+@media (min-width: 1400px){
+    .component-1 {
+        width: 350px;
+        padding-top: 20px;
+    }
+
+    .component-1 > div {
+        width: 80%;
+    }
+
+    .component-1 > .user-info > .user-image > img {
+        width: 60px;
+        aspect-ratio: 1/1;
+    }
+
+    .component-1 > .account-info {
+        gap: 16px;
+        margin-top: 35px;
+    }
+    
+    .component-1 > .recent-transactions {
+        margin-top: 30px;
+        gap: 16px;
+    }
+    
+    .component-1 > .recent-transactions > .transaction {
+        gap: 10px;
+        padding-bottom: 12px;
+    }
+
+    /* money balace for each */
+    .account-info :nth-child(1) {
+        font-weight: bolder;
+        font-size: 1.1em;
+    }
+
+    .account-info > .heading-small {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1300px){
+    .component-1 {
+        width: 320px;
+        padding-top: 16px;
+    }
+
+    .component-1 > div {
+        width: 80%;
+    }
+
+    .component-1 > .user-info > .user-image > img {
+        width: 58px;
+    }
+
+    .component-1 > .account-info {
+        gap: 14px;
+        margin-top: 30px;
+    }
+    
+    .component-1 > .recent-transactions {
+        margin-top: 25px;
+        gap: 14px;
+    }
+    
+    .component-1 > .recent-transactions > .transaction {
+        gap: 9px;
+        padding-bottom: 10px;
+    }
+
+    /* money balace for each */
+    .account-info :nth-child(1) {
+        font-weight: bolder;
+        font-size: 1.08em;
+    }
+
+    .account-info > .heading-small {
+        font-size: .97em;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .component-1 {
         width: 290px;
@@ -130,6 +212,12 @@
 
     .account-info > .heading-small {
         font-size: 0.85em;
+    }
+}
+
+@media (max-width: 1000px){
+    .component-1 > div {
+        width: 80%;
     }
 }
 

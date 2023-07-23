@@ -61,7 +61,7 @@ const RetirementStrategy = () => {
       </div>
       <button className="btn-primary text-medium">Update</button>
       {window.innerWidth > 800 ? (
-        <a href="#" className="text-primary text-medium">
+        <a href="/" className="text-primary text-medium">
           View Help Docs
         </a>
       ) : null}
@@ -77,7 +77,7 @@ const HousingAdvanceAd = () => {
         <p className="text-large bolder">Housing Advance?</p>
       </div>
       <p className="text-secondary text-small">Limited time reduced interest</p>
-      <a href="#" className="text-primary text-medium">
+      <a href="/" className="text-primary text-medium">
         Learn More
       </a>
     </div>

@@ -9,11 +9,12 @@
 .navbar-section {
     display: flex;
     flex-direction: column;
-    grid-area: 12px;
+    gap: 12px;
 }
 
 .navbar-section-1 {
     margin-bottom: 40px;
+    padding-top: 20px;
 }
 
 .navbar-section-2 {
@@ -44,6 +45,29 @@
     background-color: white;
 }
 
+@media (min-width: 1300px) {
+    .icon {
+        font-size: 1.7em;
+    }
+
+    #logo {
+        height: 40px;
+        width: 40px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .icon {
+        font-size: 1em;
+    }
+
+    #logo {
+        height: 30px;
+        width: 30px;
+    }
+}
+
 @media (max-width: 800px) {
     .icon{
         font-size: 3em;
@@ -65,4 +89,11 @@
         align-items: center;
         background-color: var(--background-color);
     }
+}
+
+
+/* Handle logo */
+#logo {
+    height: 35px;
+    width: 35px;
 }

@@ -3,7 +3,8 @@ const Nav = () => {
   return (
     <div className="navbar">
       <div className="navbar-section navbar-section-1">
-        <span className="material-symbols-outlined icon">face_3</span>
+        {/* <span className="material-symbols-outlined icon">face_3</span> */}
+        <img src={require('../images/logoForDashboard.png')} alt="Logo" id="logo"/>
         <span className="material-symbols-outlined icon">search</span>
       </div>
       <div className="navbar-section navbar-section-2">
