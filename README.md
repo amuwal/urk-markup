@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Frontend Development Internship Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains my submission for the Frontend Development Internship Assignment. In this project, I was tasked with creating a responsive website based on the provided design. The website should adapt its layout for both laptop and mobile phone views.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Site Preview](#site-preview)
+  - [Laptop View](#laptop-view)
+  - [Mobile View](#mobile-view)
+- [Deployment](#deployment)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML5
+- CSS3
+- JavaScript (if applicable)
+- React
+- ChartJs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To view the website locally on your machine, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository to your local machine using the following command:
 
-### `npm run build`
+   ```
+   git clone git@github.com:amuwal/urk-markup.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```
+    cd urk-markup
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the dependencies using npm or yarn:
 
-### `npm run eject`
+    ```
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    or
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
+    ```
+        npm start run
+    ```
+    or
+    ```
+        yarn start run
+    ```
+5. Open your web browser and visit http://localhost:3000 to view the website.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Now, the React website should be up and running on your local machine. 
 
-## Learn More
+Please note that these steps assume you have Node.js and npm (Node Package Manager) or yarn installed on your machine. If you haven't installed them yet, you can download the latest stable version of Node.js from the official website: https://nodejs.org/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Site Preview
 
-### Code Splitting
+### Laptop View
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Laptop View](./src/images/laptopLayout.png)
 
-### Analyzing the Bundle Size
+The website is designed to be fully responsive on laptops, ensuring that all elements are well-arranged and visually coherent on larger screens.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Mobile View
 
-### Making a Progressive Web App
+The website has been tested on multiple mobile devices to ensure a seamless user experience. Below are snapshots of how the website appears on different mobile devices:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+![Mobile View - Device 1](./src/images/mobileLayout-1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+![Mobile View - Device 2](./src/images/mobileLayout-2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+![Mobile View - Device 3](./src/images/mobileLayout-3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment
+
+The live version of the website can be accessed at [https://amuwal.github.io/urk-markup/]
