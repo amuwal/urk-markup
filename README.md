@@ -15,7 +15,7 @@ This repository contains my submission for the Frontend Development Internship A
 
 - HTML5
 - CSS3
-- JavaScript (if applicable)
+- JavaScript
 - React
 - ChartJs
 
